@@ -1,0 +1,14 @@
+# Ignore dotenv files
+.env
+server/.env
+
+# Python virtualenv
+venv/
+server/venv/
+
+# Node modules and build outputs
+client/node_modules/
+client/dist/
+
+# macOS junk
+.DS_Store
