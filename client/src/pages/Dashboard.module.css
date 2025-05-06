@@ -1,0 +1,85 @@
+/* Dashboard.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1722182877533-7378b60bf1e8?q=80&w=1407&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .heroOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.6)
+    );
+  }
+  
+  .heroContent {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  @keyframes smokeFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(1.05);
+      filter: blur(4px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(-10px) scale(1.02);
+      filter: blur(2px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+  }
+  
+  .heroTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  
+    opacity: 0;
+    animation: smokeFadeIn 2.5s ease-out forwards;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  
+  /* Empty state styling */
+  .emptyState {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .emptyTitle {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .emptyText {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+  }
